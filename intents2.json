@@ -81,11 +81,16 @@
          "responses": ["It froths milk for coffee, you can rent one for €29,99", "We can offer you a Qbo Milk Master for €29,99"],
           "context_filter": "smarthome"         
         },
-        {"tag": "smarthome",
+        {"tag": "smarthome1",
          "patterns": ["what are smart home devices?"],
          "responses": ["Intelligent appliances for the home."],
           "context_set": "smarthome"         
-        },        
+        },  
+        {"tag": "smarthome2",
+         "patterns": ["what about appliances?", "appliances", "for the home"],
+         "responses": ["We have robotic vacuum cleaners, virtual assistant speakers and a coffee machine"],
+          "context_set": "smarthome"         
+        },                
         {"tag": "vacuum",
          "patterns": ["How much are the robotic vacuum cleaners?"],
          "responses": ["We can rent you one of the Samsung POWERbots for €39,99"],
