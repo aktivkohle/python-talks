@@ -70,8 +70,8 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# pyenv
-.python-version
+# pyenv   # comment - I want that on GitHub
+# .python-version   
 
 # celery beat schedule file
 celerybeat-schedule

@@ -1,0 +1,101 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting.", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "drones",
+         "patterns": ["What drones do you have?", "Which drones do you have?", "Do you have something which flies?", "flies", "flight", "flying","camera"],
+         "responses": ["We can rent you a Parrot BEBOP drone for €49,99 or a BEBOP 2 for €59,99"],
+         "context_set": "drones"         
+        },
+        {"tag": "products",
+         "patterns": ["Which products do you have?", "What kinds of devices are there?", "What do you rent?" ],
+         "responses": ["We rent phones, tablets, drones, virtual-reality gear, gaming equipment, wearables and smart home devices"]
+        },
+        {"tag": "brands",
+         "patterns": ["Which brands?", "What makes of drone do you offer?", "Which brands of computer do you stock?", "What brands do you offer?"],
+         "responses": ["We sell equipment from Apple, Samsung, Parrot, HTC, Oculus, Suunto, Polar Asus, Amazon and Tchibo"],
+         "context_filter": ["computing", "wearables", "phones-tablets", "vr_gaming", "smarthome", "drones"]
+        },
+        {"tag": "phones",
+         "patterns": ["What about phones?", "phones", "mobiles", "which phones do you have?"],
+         "responses": ["There is a choice from Apple and Samsung, which brand do you prefer?"],
+          "context_set": "phones-tablets"         
+        },        
+        {"tag": "phones-apple1",
+         "patterns": ["I'd like to rent an iPhone", "Do you have Apple phones?", "Apple", "iPhone"],
+         "responses": ["We have three models of iPhone 7, with 128GB, 32GB and the 7 Plus with 128GB. Which do you want to know about?"],
+          "context_set": "phones-tablets"         
+        },      
+        {"tag": "phones-apple2",
+         "patterns": ["128GB", "iPhone 7 128GB", "one with 128GB"],
+         "responses": ["Renting an iPhone 7 128GB will be €44,99 per month"],
+          "context_filter": "phones-tablets"         
+        },                
+        {"tag": "phones-apple3",
+         "patterns": ["7 Plus", "iPhone 7 Plus", "a 7 Plus", "I'd like to rent a 7 Plus"],
+         "responses": ["Renting an iPhone 7 128GB will be €44,99 per month"],
+          "context_filter": "phones-tablets"         
+        }, 
+        {"tag": "phones-apple4",
+         "patterns": ["32GB", "iPhone 7 32GB", "the cheapest", "I'd like to rent a 7 Plus"],
+         "responses": ["Renting an iPhone 7 128GB will be €44,99 per month"],
+          "context_filter": "phones-tablets"         
+        },
+        {"tag": "phones-samsung1",
+         "patterns": ["Samsung", "Android", "I prefer Samsung"],
+         "responses": ["We can rent you a Samsung Galaxy S8 64GB for €44,99 or an S8+ 64GB for €49,99"],
+          "context_filter": "phones-tablets"         
+        },                          
+        {"tag": "notebooks",
+         "patterns": ["Which notebooks can I rent?", "Do you rent computers?", "what about computers", "Which computers do you have?", "Do you do computers?", "Which notebooks do you have?", "notebooks", "computers"],
+         "responses": ["We can offer you a range of Apple Macbooks from €59,99 to €74,99, a Microsoft Surface for €59,99 or a Lenovo convertible Yoga 300-11IBR also for €59,99"],
+          "context_set": "computing"         
+        },
+        {"tag": "notebooks-apple",
+         "patterns": ["Which Macbooks can I rent?", "Which Apple PCs do you have?", "I'd like to rent a Macbook", "Apple", "Do you rent tablets?"],
+         "responses": ["We can offer you a range of Apple Macbooks from €59,99 to €74,99"],
+          "context_filter": "computing"         
+        },        
+        {"tag": "wearables-define",
+         "patterns": ["What are wearables?", "What do you mean by wearables?"],
+         "responses": ["They are smart watches from Apple, Suunto, Polar or Asus"],
+          "context_set": "wearables"
+        },
+        {"tag": "wearables-rent",
+         "patterns": ["How much to rent a smart watch?", "Which wearables do you offer", "How much to rent a wearable?"],
+         "responses": ["We have Apple, Suunto and Polar watches for €39,99 or a 42mm Apple watch for €44,99 and an Asus also for €44,99"],
+          "context_filter": "wearables"         
+        },        
+        {"tag": "milk",
+         "patterns": ["What is a Qbo Milk Master?", "Do you have any coffee machines?"],
+         "responses": ["It froths milk for coffee, you can rent one for €29,99", "We can offer you a Qbo Milk Master for €29,99"],
+          "context_filter": "smarthome"         
+        },
+        {"tag": "smarthome",
+         "patterns": ["what are smart home devices?"],
+         "responses": ["Intelligent appliances for the home."],
+          "context_set": "smarthome"         
+        },        
+        {"tag": "vacuum",
+         "patterns": ["How much are the robotic vacuum cleaners?"],
+         "responses": ["We can rent you one of the Samsung POWERbots for €39,99"],
+          "context_filter": "smarthome"             
+        },
+        {"tag": "vr",
+         "patterns": ["What is virtual reality?", "virtual reality", "goggles", "glasses"],
+         "responses": ["There are two virtual reality glasses we offer, the HTC Vice or the Oculus Rift, both for €59,99"],
+          "context_set": "vr_gaming"             
+        }
+   ]
+}
+
