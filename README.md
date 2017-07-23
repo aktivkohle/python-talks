@@ -40,6 +40,7 @@ I haven't graphed the loss but could see it coming down but generally waving aro
 Nevertheless this stopwords measure introduced another problem: 
 
 > Anyone there?
+
 > We have a range of MacBooks, a Microsoft Surface or a Lenovo Yoga. Which kind would you like? 
 
 The word "anyone" was within the stopwords so have to manually put that one back in. 'how' had to also go back in but not 'you' as that will ruin the results, it's there too many times in the intents file. 
