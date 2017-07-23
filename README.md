@@ -1,6 +1,8 @@
 # a conversational application with python
 
-This is an adaptation of [this](https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077) tensorflow chatbot 
+This is an adaptation of [this](https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077) tensorflow chatbot. 
+
+If you want to look straight at a sample chat before reading all this text, **[this notebook](https://github.com/aktivkohle/python-talks/blob/master/display_sample_chat.ipynb) displays a sample chat.**
 
 The conversational intents needed to be defined. Each conversational intent contains:
 
@@ -22,8 +24,8 @@ The csv file with it's 25 rows of products needed to be transformed into an inte
 The model does not need to be rebuilt unless the intent patterns change. 
 
 The article above mentions the possibility for several hundred intents and thousands of patterns which puts my intents file for this prototype in perspective..
-
-**[This notebook](https://github.com/aktivkohle/python-talks/blob/master/display_sample_chat.ipynb) shows how a sample chat went.** It was going better before I last modified the intents file. More work needed here.. In addition to working on the intents file it would be worth experimenting with `ERROR_THRESHOLD` in generate_responses.py to see what happens.
+ 
+In addition to working on the intents file it would be worth experimenting with `ERROR_THRESHOLD` in generate_responses.py to see what happens.
 
 Something else in that program is `userID='123'` which suggests this system might easily fit to a web frontend with multiple users.
 
