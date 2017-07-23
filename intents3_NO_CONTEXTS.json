@@ -10,17 +10,20 @@
         {"tag": "likesSamsung",
          "patterns": ["Samsung", "Android", "Galaxy", "Samsung Galaxy", "Samsung Galaxy S8", 
              "I prefer Samsung", "I like Samsung", "I like Android", 
-             "Android is easier", "I prefer Android", "Android please"],
+             "Android is easier", "I prefer Android", "Android please",
+             "Actually would also like to hear about your Android devices"],
          "responses": ["You can rent the Samsung Galaxy S8 64GB for €44,99 or the S8+ for€49,99"]
         },            
         {"tag": "likes_iPhone",
          "patterns": ["iPhone", "iOS", "Apple iPhone", "I've always had iPhones", "I prefer Apple phones",
-             "Rather an Apple iPhone", "An iPhone", "An iPhone please", "apple phone"],
+             "Rather an Apple iPhone", "An iPhone", "An iPhone please", "apple phone",
+             "Actually tell me as well about the iPhones"],
          "responses": ["You can rent an iPhone 7 128GB for €44,99, an iPhone 7 32GB for €39,99 or a 7 Plus 128GB for €49,99"]
         },    
         {"tag": "wantsDrone",
          "patterns": ["Parrot", "drone", "BEBOP", "I'd like something that flies", "I'm interested in your drones",
-             "Can you tell me about your drones?", "flight", "flying"],
+             "Can you tell me about your drones?", "flight", "flying", 
+             "What about something which flies", "how about something which flies"],
          "responses": ["Certainly, we rent the BEBOP for €49,99 or the BEBOP 2 for €59,99"]
         },    
         {"tag": "wantsVR",
@@ -28,7 +31,7 @@
              "virtual reality", "virtual reality goggles", "virtual reality glasses", "gaming", 
              "I'm interested in gaming", "Am interested in VR-glasses", "vive", "Rift", "Oculus", 
              "I'd like to try out virtual reality"],
-         "responses": ["The VR-glasses can rent you  are the HTC Vice the Oculus Rift, both cost €59,99"]
+         "responses": ["The VR-glasses can rent you are the HTC Vice the Oculus Rift, both cost €59,99"]
         },           
         {"tag": "wantsComputer",
          "patterns": ["notebooks", "laptops", "computers", "computing", 
