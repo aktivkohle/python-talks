@@ -9,6 +9,8 @@ The conversational intents needed to be defined. Each conversational intent cont
 * responses (one will be used as a response)
 * contextual elements.
 
+From the above it is important to note that *only* the patterns go into the classifier, so creating the intents file those fields need the most care. Responses are simply selected randomly so it only matters that it makes sense and tags are just handles, not processed, just for debugging or viewing probabilities. Importantly however, *unique*.
+
 The intents file as a json can be viewed [here](https://github.com/aktivkohle/python-talks/blob/master/intents2.json).
 
 The model does not need to be rebuilt unless the intent patterns change. 
