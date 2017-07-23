@@ -33,4 +33,13 @@ Something else in that program is `userID='123'` which suggests this system migh
 
 Sections of the terminal output from the programs generate_responses.py and train_model.py can be found [here](https://github.com/aktivkohle/python-talks/blob/master/terminal_log_samples.txt)
 
+# Very big effect by removing stopwords on NN loss and accuracy
 
+I haven't graphed the loss but could see it coming down but generally waving around. Accuracy went up but while loss started at about 2.8 and went down to 1.4, it was waving around so much in the middle it was not what you want to see. Accuracy had moved from 0.02 about 0.95 but was also moving around. [This stackoverflow answer](https://stackoverflow.com/questions/40910857/how-to-interpret-increase-in-both-loss-and-accuracy) communicates concisely how to interpret the various behaviours with loss and accuracy. After the three lines of code that removes stopwords were put in, The loss went right down to 0.04 and the accuracy was app at 0.9996 even 1.000 was seen, and was not waving around much. 
+
+Nevertheless this stopwords measure introduced another problem: 
+
+> >>> Anyone there?
+> We have a range of MacBooks, a Microsoft Surface or a Lenovo Yoga. Which kind would you like? 
+
+The word "anyone" was within the stopwords so have to manually put that one back in. 'how' had to also go back in but not 'you' as that will ruin the results, it's there too many times in the intents file. 
