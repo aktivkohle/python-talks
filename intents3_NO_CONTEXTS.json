@@ -11,7 +11,7 @@
          "patterns": ["Samsung", "Android", "Galaxy", "Samsung Galaxy", "Samsung Galaxy S8", 
              "I prefer Samsung", "I like Samsung", "I like Android", 
              "Android is easier", "I prefer Android", "Android please"],
-         "responses": ["You can rent the S8 64GB for €44,99 or the S8+ for€49,99"]
+         "responses": ["You can rent the Samsung Galaxy S8 64GB for €44,99 or the S8+ for€49,99"]
         },            
         {"tag": "likes_iPhone",
          "patterns": ["iPhone", "iOS", "Apple iPhone", "I've always had iPhones", "I prefer Apple",
@@ -82,7 +82,7 @@
         }, 
         {"tag": "smarthome-undecided",
          "patterns": ["what about appliances?", "appliances", "for the home",
-             "What do you have for the home?", "smart home devices", "smarthome"],
+             "What do you have for the home?", "smart home devices", "smarthome", "smart appliances"],
          "responses": ["We have robotic vacuum cleaners, virtual assistant speakers and a coffee machine"]     
         },                                                                      
         {"tag": "greeting",
