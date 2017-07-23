@@ -1,0 +1,76 @@
+{"intents": [
+        {"tag": "generalPhonesQuery",
+         "patterns": ["mobile phones", "phones", "phone", "telephone", "mobile telephone", "mobile", "mobiles"
+         	"I'm interested in getting a new phone", "which phones do you have", 
+         	"can I rent a phone", "which brands of phone do you have?", "I'm interested in a phone",
+         	"I'm interested in phones", "rent a phone", "I'd like to rent a phone"],
+         "responses": ["Samsung or Apple?", "iPhone or Android?", "Samsung Galaxy or iPhone?", "Would you prefer an iPhone or an Android?"],
+         "context_set": ""
+        },	
+        {"tag": "likesSamsung",
+         "patterns": ["Samsung", "Android", "Galaxy", "Samsung Galaxy", "Samsung Galaxy S8", 
+         	"I prefer Samsung", "I like Samsung", "I like Android", 
+         	"Android is easier", "I prefer Android", "Android please"],
+         "responses": ["You can rent the S8 64GB for €44,99 or the S8+ for€49,99"],
+         "context_set": ""
+        },	        
+        {"tag": "likes_iPhone",
+         "patterns": ["iPhone", "iOS", "Apple iPhone", "I've always had iPhones", "I prefer Apple",
+         	"Rather an Apple iPhone", "An iPhone", "An iPhone please"],
+         "responses": ["You can rent an iPhone 7 128GB for €44,99, an iPhone 7 32GB for €39,99 or a 7 Plus 128GB for €49,99"],
+         "context_set": ""
+        },	
+        {"tag": "wantsDrone",
+         "patterns": ["Parrot", "drone", "BEBOP", "I'd like something that flies", "I'm interested in your drones",
+         	"Can you tell me about your drones?", "flight", "flying"],
+         "responses": ["Certainly, we rent the BEBOP for €49,99 or the BEBOP 2 for €59,99"],
+         "context_set": ""
+        },	
+        {"tag": "wantsVR",
+         "patterns": ["What about Gaming and VR?", "Which games do you rent?", "VR", "virtual reality glasses",
+         	"virtual reality", "virtual reality goggles", "virtual reality glasses", "gaming", 
+         	"I'm interested in gaming", "Am interested in VR-glasses", "vive", "Rift", "Oculus"],
+         "responses": ["The VR-glasses can rent you  are the HTC Vice the Oculus Rift, both cost €59,99"],
+
+        },	       
+        {"tag": "",
+         "patterns": ["", "", ""],
+         "responses": ["", "", ""],
+         "context_set": ""
+        },	
+        {"tag": "",
+         "patterns": ["", "", ""],
+         "responses": ["", "", ""],
+         "context_set": ""
+        },	        
+        {"tag": "",
+         "patterns": ["", "", ""],
+         "responses": ["", "", ""],
+         "context_set": ""
+        },	
+        {"tag": "",
+         "patterns": ["", "", ""],
+         "responses": ["", "", ""],
+         "context_set": ""
+        },	
+        {"tag": "",
+         "patterns": ["", "", ""],
+         "responses": ["", "", ""],
+         "context_set": ""
+        },	                 
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting.", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        }
+   ]
+}
+
