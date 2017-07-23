@@ -14,8 +14,8 @@
          "responses": ["You can rent the Samsung Galaxy S8 64GB for €44,99 or the S8+ for€49,99"]
         },            
         {"tag": "likes_iPhone",
-         "patterns": ["iPhone", "iOS", "Apple iPhone", "I've always had iPhones", "I prefer Apple",
-             "Rather an Apple iPhone", "An iPhone", "An iPhone please"],
+         "patterns": ["iPhone", "iOS", "Apple iPhone", "I've always had iPhones", "I prefer Apple phones",
+             "Rather an Apple iPhone", "An iPhone", "An iPhone please", "apple phone"],
          "responses": ["You can rent an iPhone 7 128GB for €44,99, an iPhone 7 32GB for €39,99 or a 7 Plus 128GB for €49,99"]
         },    
         {"tag": "wantsDrone",
@@ -60,7 +60,7 @@
          "patterns": ["wearables", "smartwatch", "smart watch", "suunto", "polar",
              "I'm interested in smartwatches", "Which smartwatch do you have?", "I'd like to try a smartwatch",
              "watch", "watches", "Ambit", "V800", "Asus",
-             "How much are the watches?"],
+             "How much are the watches?", "apple watch"],
          "responses": ["You can rent the following smartwatches : 38mm Apple Watch for €39,99 \n 42mm Apple Watch for €44,99 \n Suunto Ambit 3 watch for €39,99 \n Asus Watch WI503Q-1LDBR0001 for €44,99."]
         }, 
         {"tag": "wants_virtual_assistent",
@@ -86,11 +86,11 @@
          "responses": ["We have robotic vacuum cleaners, virtual assistant speakers and a coffee machine"]     
         },                                                                      
         {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "morning", "afternoon"],
          "responses": ["Hello, thanks for visiting.", "Good to see you again", "Hi there, how can I help?"]
         },
         {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye"],
+         "patterns": ["Bye", "See you later", "Goodbye", "Ciao"],
          "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
         },
         {"tag": "thanks",
