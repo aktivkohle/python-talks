@@ -38,6 +38,9 @@ if __name__ == "__main__":
     import random
     import pickle
     import json
+    from sklearn.feature_extraction.stop_words import ENGLISH_STOP_WORDS
+    from nltk.corpus import stopwords
+    STOPLIST = set(stopwords.words('english') + ["n't", "'s", "'m", "ca"] + list(ENGLISH_STOP_WORDS))
 
     # import our chat-bot intents file
     with open(INTENTSFILE) as json_data:
@@ -46,7 +49,11 @@ if __name__ == "__main__":
     words = []
     classes = []
     documents = []
-    ignore_words = ['?']
+    ignore_words = list(STOPLIST)
+    ignore_words.remove('anyone')
+    ignore_words.remove('how')   # otherwise the greetings 'anyone there' and 'how are you' are not recognised
+
+
     # loop through each sentence in our intents patterns
     for intent in intents['intents']:
         for pattern in intent['patterns']:
