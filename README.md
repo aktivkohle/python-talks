@@ -21,6 +21,8 @@ The csv file with it's 25 rows of products needed to be transformed into an inte
 
 'Samsung' for example will be used only for the phones while the vacuum cleaner will always be called a POWERbot. There are plenty of rather unique keywords in there like 'Polar' which will always be the watch here. 
 
+Actually, although the responses are not in any way being processed, their content will affect the language that the human interacting with the chatbot uses. We don't want to encourage the user to use language that would confuse the chatbot, so it is again important to restrict the responses to the relevant keywords, eg Samsung for the phone and POWERbot for the vacuum cleaner.
+
 The model does not need to be rebuilt unless the intent patterns change. 
 
 The article above mentions the possibility for several hundred intents and thousands of patterns which puts my intents file for this prototype in perspective.
