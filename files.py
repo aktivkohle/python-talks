@@ -1,3 +1,3 @@
-INTENTSFILE = 'intents3_NO_CONTEXTS.json'
+INTENTSFILE = 'intents3_NO_CONTEXTS_MINIMALIST.json'
 MODELFILES = 'model2.tflearn'
 TRAININGDATAFILE = 'training_data2'
