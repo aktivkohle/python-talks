@@ -1,0 +1,85 @@
+{"intents": [
+        {"tag": "generalPhonesQuery",
+         "patterns": ["mobile phones", "phones", "phone", "telephone", "mobile telephone", "mobile", "mobiles",
+             "new phone", "phones", 
+             "can I rent phone", "brands of phone"],
+         "responses": ["Samsung or Apple?", "iPhone or Android?", 
+             "Samsung Galaxy or iPhone?", "Would you prefer an iPhone or an Android?"]
+         },    
+        {"tag": "likesSamsung",
+         "patterns": ["Samsung", "Android", "Galaxy", "Samsung Galaxy", "Samsung Galaxy S8"],
+         "responses": ["You can rent the Samsung Galaxy S8 64GB for €44,99 or the S8+ for€49,99"]
+        },            
+        {"tag": "likes_iPhone",
+         "patterns": ["iPhone", "iOS", "Apple iPhone"],
+         "responses": ["You can rent an iPhone 7 128GB for €44,99, an iPhone 7 32GB for €39,99 or a 7 Plus 128GB for €49,99"]
+        },    
+        {"tag": "wantsDrone",
+         "patterns": ["Parrot", "drone", "BEBOP", "flies", "drones", "flying", "sky"],
+         "responses": ["Certainly, we rent the BEBOP for €49,99 or the BEBOP 2 for €59,99"]
+        },    
+        {"tag": "wantsVR",
+         "patterns": ["What about Gaming and VR?", "Which games do you rent?", "VR", "virtual reality glasses",
+             "virtual reality", "virtual reality goggles", "virtual reality glasses", "gaming", "vive", "Rift", "Oculus"],
+         "responses": ["The VR-glasses can rent you are the HTC Vice the Oculus Rift, both cost €59,99"]
+        },           
+        {"tag": "wantsComputer",
+         "patterns": ["notebooks", "laptops", "computers", "computing", 
+             "rent laptop", "rent notebook", "rent a computer",
+             "computers", "PC"],
+         "responses": ["We have a range of MacBooks, a Microsoft Surface or a Lenovo Yoga. Which kind would you like?"]
+        },    
+        {"tag": "wantsMacBook",
+         "patterns": ["MacBook", "macbook", "mac", "I would like a MacBook", "An Apple MacBook","MacBooks"],
+         "responses": ["We have the following MacBooks: MacBook 12 inch M-5Y31, 8GB RAM, 516GB for €59,99, MacBook Air 11 inch i7 2.2, 8GB RAM, 512GB for €64,99, MacBook Air 13 inch i5-5250U, 4GB RAM, 128GB for €69,99, MacBook Pro 13 inch i5-3210M, 4GB RAM, 500GB for €74,99."]
+        },            
+        {"tag": "wantsSurface",
+         "patterns": ["Microsoft", "Surface", "Microsoft Surface", "microsoft convertible",
+             "I'd like a windows convertible PC", "Microsoft convertible PC","Microsoft Surface?"],
+         "responses": ["Certainly you can rent a Microsoft Surface convertible notebook 512GB SSD Intel Core i7 16GB RAM dGPU for €59,99"]
+        },        
+        {"tag": "wantsYoga",
+         "patterns": ["I'm interested in the Lenovo", "Lenovo", "Yoga", "Lenovo convertible", "Yoga convertible"],
+         "responses": ["You can rent the Levnovo Yoga Convertible Laptop 300-11IBR 80M1004KGE for €59,99"]
+        },    
+        {"tag": "wantsConvertible-ambiguous",
+         "patterns": ["convertible", "convertible PC"],
+         "responses": ["Would you prefer the Microsoft Surface or the Lenovo Yoga?"]
+        },
+        {"tag": "wantsWearable",
+         "patterns": ["wearables", "smartwatch", "smart watch", "suunto", "polar",
+             "I'm interested in smartwatches", "Which smartwatch do you have?", "I'd like to try a smartwatch",
+             "watch", "watches", "Ambit", "V800", "Asus","apple watch"],
+         "responses": ["You can rent the following smartwatches : 38mm Apple Watch for €39,99, 42mm Apple Watch for €44,99,  Suunto Ambit 3 watch for €39,99 or Asus Watch WI503Q-1LDBR0001 for €44,99."]
+        }, 
+        {"tag": "wants_virtual_assistent",
+         "patterns": ["virtual assistant", "virtual assistent", "virtual assistent speakers",
+             "Amazon", "Alexa", "Alexa Dot", "I'd like a home assistent", "speaker", "Alexa Echo"],
+         "responses": ["You can rent the Amazon Alexa Dot for €44,99 or the Alexa Echo for €49,99"]
+        }, 
+        {"tag": "wantsCoffeeMachine",
+         "patterns": ["coffee", "coffee machine", "milk frother", "cappuccino machine", "Tchibo", "Qbo Milk Master", "milk"],
+         "responses": ["You can rent the Tchibo Qbo Milk Master for €29,99"]
+        }, 
+        {"tag": "wantsRoboticVacuum",
+         "patterns": ["vacuum", "robot", "robotic vacuum cleaner", "POWERbot", "floors", "cleaning", "clean", "dust"],
+         "responses": ["You can rent a POWERbot VR20J9020UR/EG or a POWERbot VR20J9259U/EG, both are €39,99"]
+        }, 
+        {"tag": "smarthome-undecided",
+         "patterns": ["what about appliances?", "appliances", "for the home", "smart home devices", "smarthome", "smart appliances"],
+         "responses": ["We have robotic vacuum cleaners, virtual assistant speakers and a coffee machine"]     
+        },                                                                      
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "morning", "afternoon"],
+         "responses": ["Hello, thanks for visiting.", "Good to see you again", "Hi there, how can I help?"]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Ciao"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        }
+   ]
+}
