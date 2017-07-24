@@ -64,7 +64,7 @@
              "I'm interested in smartwatches", "Which smartwatch do you have?", "I'd like to try a smartwatch",
              "watch", "watches", "Ambit", "V800", "Asus",
              "How much are the watches?", "apple watch"],
-         "responses": ["You can rent the following smartwatches : 38mm Apple Watch for €39,99 \n 42mm Apple Watch for €44,99 \n Suunto Ambit 3 watch for €39,99 \n Asus Watch WI503Q-1LDBR0001 for €44,99."]
+         "responses": ["You can rent the following smartwatches : 38mm Apple Watch for €39,99, 42mm Apple Watch for €44,99,  Suunto Ambit 3 watch for €39,99 or Asus Watch WI503Q-1LDBR0001 for €44,99."]
         }, 
         {"tag": "wants_virtual_assistent",
          "patterns": ["virtual assistant", "virtual assistent", "virtual assistent speakers",
