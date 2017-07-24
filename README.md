@@ -2,7 +2,7 @@
 
 This is an adaptation of [this](https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077) tensorflow chatbot. An interesting [article](http://pavel.surmenok.com/2016/09/11/chatbot-architecture/) about chatbot architecture splits them into the categories of business or entertainment and generative models or retrieval based, this is a business one with a retrieval based model. 
 
-If you want to look straight at a sample chat before reading all this text, **[this notebook](https://github.com/aktivkohle/python-talks/blob/master/display_sample_chat.ipynb)** displays a sample chat.
+If you want to look straight at a sample chat before reading all this text, **[this notebook](https://github.com/aktivkohle/python-talks/blob/master/display_sample_chat.ipynb)** displays a sample chat. It includes feedback from the model so a developer can see what is going on.
 
 The conversational intents needed to be defined. Each conversational intent contains:
 
