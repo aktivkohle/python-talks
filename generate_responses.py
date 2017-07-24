@@ -41,7 +41,7 @@ model.load(MODELFILES)
 # create a data structure to hold user context
 context = {}
 
-ERROR_THRESHOLD = 0.25
+ERROR_THRESHOLD = 0  # mo point this not returning a result instead process a low probability
 def classify(sentence):
     # generate probabilities from the model
     results = model.predict([bow(sentence, words)])[0]
@@ -57,8 +57,11 @@ def classify(sentence):
 
 def response(sentence, userID='123', show_details=False):
     results = classify(sentence)
+    # get probabilities out of tuples
+    probabilities = [t[1] for t in results]
+
     # if we have a classification then find the matching intent tag
-    if results:
+    if max(probabilities) > 0.60:
         # loop as long as there are matches to process
         while results:
             for i in intents['intents']:
@@ -76,3 +79,5 @@ def response(sentence, userID='123', show_details=False):
                         # a random response from the intent
                         return (random.choice(i['responses']))                    
             results.pop(0)
+    else:
+        return ("I don't understand sorry, am only a robot - please ask me that again but try with just a single word.")
