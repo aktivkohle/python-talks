@@ -46,3 +46,16 @@ The word "anyone" was within the stopwords so have to manually put that one back
 
 # An iterative process
 As a human with a knowledge of the language and style of conversing ideas to improve the intents file occur the more you interact with the chatbot. 
+
+# Evolution of the intents file
+I removed all the contexts after the first attempt as it there is not really any need with this design to lock the chat into one track as there was with the original mopeds example *Do you want a moped today? Then here is our number*. Then made it more minimal, reducing the patterns more to keywords. Latest update is that the word 'how' has to go from everywhere except the greeting since this happened:
+
+> How about something which flies?
+
+> Hi there, how can I help?
+
+> [('greeting', 0.50350749), ('wantsDrone', 0.48901734)] 
+
+That is not good, it should be wantsDrone 0.90, that's why here for example, 'how' needed to go. It's only running off bag of words, no sequences or character level things.. 
+
+
