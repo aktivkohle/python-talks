@@ -28,8 +28,7 @@ The model does not need to be rebuilt unless the intent patterns change.
 The article above mentions the possibility for several hundred intents and thousands of patterns which puts my intents file for this prototype in perspective.
  
 In addition to working on the intents file it would be worth experimenting with `ERROR_THRESHOLD` in generate_responses.py to see what happens.
-
-Something else in that program is `userID='123'` which suggests this system might easily fit to a web frontend with multiple users.
+Something else in that program is `userID='123'` which suggests this system might easily fit to a web frontend with multiple users. There is a parameter in the response function `show_details` which defaults to `False` could be used to look at the contexts.
 
 Sections of the terminal output from the programs generate_responses.py and train_model.py can be found [here](https://github.com/aktivkohle/python-talks/blob/master/terminal_log_samples.txt)
 
