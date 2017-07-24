@@ -52,6 +52,4 @@ I removed all the contexts after the first attempt as it there is not really any
 That is not good, it should be wantsDrone 0.90, that's why here for example, 'how' needed to go. It's only running off bag of words, no sequences or character level things.. 
 
 ### sensible response when probabilities are low
-I added some code so that the chatbot tells the user it cannot understand if no tag has a high enough probability. That way it reduces the chance of it giving answers that are completely out of tune with what the user said and is also more polite to interact with. 
-
-
+After chatting with it for a while and pasting in some irrelevant texts could see that 0.60 would be a good cutoff for whether it has understood or not. I added some code so that the chatbot tells the user it cannot understand if no tag has a high enough probability. That way it reduces the chance of it giving answers that are completely out of tune with what the user said and is also more polite to interact with. 
