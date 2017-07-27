@@ -11,7 +11,8 @@
          "patterns": ["Samsung", "Android", "Galaxy", "Samsung Galaxy", "Samsung Galaxy S8", 
              "I prefer Samsung", "I like Samsung", "I like Android", 
              "Android is easier", "I prefer Android", "Android please",
-             "Actually would also like to hear about your Android devices"],
+             "Actually would also like to hear about your Android devices",
+             "I hate Apple so better stick with Android"],
          "responses": ["You can rent the Samsung Galaxy S8 64GB for €44,99 or the S8+ for€49,99", 
          	"We can rent you the Samsung Galaxy S8 64GB for €44,99 or the S8+ for€49,99"]
         },            
@@ -28,7 +29,7 @@
             "Sorry, I just got confused. Was that an Apple iPhone or Apple MacBook. Please answer with 'MacBook' or 'iPhone'"]
         },
         {"tag": "hates_Apple",
-         "patterns": ["I hate Apple!", "I can't stand Apple", "I dislike Apple", "I don't like Apple"],
+         "patterns": ["I hate Apple!", "By the way, I hate Apple", "I hate Apple", "I can't stand Apple", "I dislike Apple", "I don't like Apple"],
          "responses": ["Ok fair enough, so can't remember if we were talking phones or computers. Can we help you with a Samsung Android phone or a different kind of notebook computer?"]
         },                 
         {"tag": "wantsDrone",
@@ -105,7 +106,7 @@
          "responses": ["We have robotic vacuum cleaners, virtual assistant speakers and a coffee machine"]     
         },                                                                      
         {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Anyone there?" "Hello", "Good day", "morning", "afternoon"],
+         "patterns": ["Hi", "How are you", "anyone there", "is anyone there?", "Hello", "Good day", "morning", "afternoon"],
          "responses": ["Hello, thanks for visiting.", "Good to see you again", "Hi there, how can I help?"]
         },
         {"tag": "goodbye",
