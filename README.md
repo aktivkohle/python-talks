@@ -2,6 +2,8 @@
 
 ### *update -  the ngram-mod branch*
 
+Here is [the notebook](https://github.com/aktivkohle/python-talks/blob/ngrams-mod/display_sample_chat.ipynb) with the chat from the ngrams-mod branch.
+
 So an issue arose where a test-case :
 > *I don't like Microsoft but am more into Apple*
 
@@ -23,7 +25,9 @@ That there are (or were) 2 hidden layers each with 8 neurons in the network coul
 
 Then there was the issue of batch size which affects how the estimate of the gradient converges. This is discussed in [this post](https://stats.stackexchange.com/questions/153531/what-is-batch-size-in-neural-network/) which contains a graphic that communicates it quite nicely. A batch size of 4 was found with bit of trial and error to give an enormous improvement, the model tuning to higher levels of accuracy with less jumping around and in fewer epochs.
 
+### Further work on intents file
 
+Some intents were added to deal with apple ambiguity, Apple watch vs Apple Macbook vs Apple iPhone. Also, there is prompting of the user to hopefully encourage the user to give responses which the neural network will correctly interpret. 
 
 ______________________
 
