@@ -93,7 +93,7 @@ if __name__ == "__main__":
         # list of tokenized words for the pattern
         pattern_words = doc[0]
         # stem each word
-        pattern_words = [stemmer.stem(word.lower()) for word in pattern_words]
+        pattern_words = [stemmer.stem(word.lower()) for word in pattern_words if word.lower() not in ignore_words]
         # create our bag of words array
         for w in words:
             bag.append(1) if w in pattern_words else bag.append(0)
