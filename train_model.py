@@ -83,8 +83,10 @@ if __name__ == "__main__":
             if intent['tag'] not in classes:
                 classes.append(intent['tag'])
 
-    # stem and lower each word and remove duplicates
-    words = [stemmer.stem(w.lower()) for w in words if w.lower() not in ignore_words]
+    # make the contents of all the tuples in words lower case
+    words = [flexible_lower(element) for element in words]
+    # now make the words outside the tuples stemmed and into lower case where not in the ignore words
+    words = [stemmer.stem(w.lower()) if isinstance(w, str) == True and w.lower() not in ignore_words else w for w in words]
     words = list(set(words))
 
     # remove duplicates
@@ -108,8 +110,9 @@ if __name__ == "__main__":
         bag = []
         # list of tokenized words for the pattern
         pattern_words = doc[0]
-        # stem each word
-        pattern_words = [stemmer.stem(word.lower()) for word in pattern_words if word.lower() not in ignore_words]
+        # stemmer, lower stopword removal according to the same recipe as above on pattern_words
+        pattern_words = [flexible_lower(element) for element in pattern_words]
+        pattern_words = [stemmer.stem(w.lower()) if isinstance(w, str) == True and w.lower() not in ignore_words else w for w in pattern_words] 
         # create our bag of words array
         for w in words:
             bag.append(1) if w in pattern_words else bag.append(0)
