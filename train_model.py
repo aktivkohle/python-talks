@@ -63,6 +63,7 @@ if __name__ == "__main__":
     documents = []
     ignore_words = list(STOPLIST)
     ignore_words.remove('anyone')
+    ignore_words.remove('there')    
     ignore_words.remove('how')   # otherwise the greetings 'anyone there' and 'how are you' are not recognised
 
 
