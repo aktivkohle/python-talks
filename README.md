@@ -13,6 +13,8 @@ will be seen by a bag-of-words model exactly the same as the sentence that means
 
 So I had to look closer at the original code which I didn't write, but until now had used without too much close inspection. One [bug](https://github.com/aktivkohle/python-talks/commit/d94fff20074105742ef29bc0f59f9ec6f1a29a03) was found with the stopwords code (committed on master branch). Used NLTK tools to create bigrams and trigrams and it created them inside tuples. Care and attention to detail was then needed to recreate the functions so that they could handle features which were no longer a list of just words/strings, but also included tuples of size 2 and 3. [Here](https://github.com/aktivkohle/python-talks/blob/ngrams-mod/train_model.py#L89) is a long list comprehension which handles that at one point.
 
+Actually a phrase like *"Am not too keen on Microsoft"* would need at least a 5-gram to be detected so please don't type it in! Still, if 4 or 5 grams were added to the model it is not likely it would slow anything down or use up the memory. 
+
 With the change away from a model that was looking for single keywords, it is no longer appropriate to have a minimilist intents file, so files.py was reset so the model uses the file before that. 
 
 ### Tuning the neural network
