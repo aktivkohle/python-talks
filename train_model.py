@@ -144,7 +144,7 @@ if __name__ == "__main__":
     # Define model and setup tensorboard
     model = tflearn.DNN(net, tensorboard_dir='tflearn_logs')
     # Start training (apply gradient descent algorithm)
-    model.fit(train_x, train_y, n_epoch=1000, batch_size=8, show_metric=True)
+    model.fit(train_x, train_y, n_epoch=1000, batch_size=4, show_metric=True)
     model.save(MODELFILES)
 
     pickle.dump( {'words':words, 'classes':classes, 'train_x':train_x, 'train_y':train_y}, open( TRAININGDATAFILE, "wb" ) )
