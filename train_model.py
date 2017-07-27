@@ -71,7 +71,7 @@ if __name__ == "__main__":
         for pattern in intent['patterns']:
             # tokenize each word in the sentence
             token = nltk.word_tokenize(pattern)
-            twograms = nltk.bigrams(token)
+            twograms = nltk.bigrams(token)           # Note - nltk.bigrams and nltk.trigrams output generator objects
             threegrams = nltk.trigrams(token)
             # ngrams includes 1-gram, 2-gram and 3-grams
             ngrams = token + list(twograms) + list(threegrams)
