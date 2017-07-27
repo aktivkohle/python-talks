@@ -69,10 +69,10 @@ if __name__ == "__main__":
 
     # stem and lower each word and remove duplicates
     words = [stemmer.stem(w.lower()) for w in words if w.lower() not in ignore_words]
-    words = sorted(list(set(words)))
+    words = list(set(words))
 
     # remove duplicates
-    classes = sorted(list(set(classes)))
+    classes = list(set(classes))
 
     print (len(documents), "documents")
     print (len(classes), "classes", classes)
