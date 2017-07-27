@@ -148,3 +148,6 @@ if __name__ == "__main__":
     model.save(MODELFILES)
 
     pickle.dump( {'words':words, 'classes':classes, 'train_x':train_x, 'train_y':train_y}, open( TRAININGDATAFILE, "wb" ) )
+    
+    print ("\n", "Number of neurons in input layer of network: ",  len(train_x[0]))
+    print ("Number of neurons in output layer of network: ",  len(train_y[0]), "\n")
