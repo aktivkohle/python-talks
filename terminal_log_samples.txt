@@ -1,92 +1,57 @@
-$ python train_model.py 
-
-
-hdf5 is not supported on this machine (please install/reinstall h5py for optimal experience)
-76 documents
-20 classes ['brands', 'drones', 'goodbye', 'greeting', 'milk', 'notebooks', 'notebooks-apple', 'phones', 'phones-apple1', 'phones-apple2', 'phones-apple3', 'phones-apple4', 'phones-samsung1', 'products', 'smarthome', 'thanks', 'vacuum', 'vr', 'wearables-define', 'wearables-rent']
-87 unique stemmed words ["'d", "'s", '128gb', '32gb', '7', 'a', 'about', 'an', 'android', 'any', 'anyon', 'appl', 'apply', 'ar', 'brand', 'by', 'bye', 'camer', 'can', 'cheapest', 'cle', 'coff', 'comput', 'day', 'dev', 'do', 'dron', 'fli', 'flight', 'fly', 'for', 'glass', 'goggl', 'good', 'goodby', 'hav', 'hello', 'help', 'hi', 'hom', 'how', 'i', 'iphon', 'is', 'kind', 'lat', 'lik', 'macbook', 'machin', 'mak', 'mast', 'mean', 'milk', 'mobl', 'much', 'notebook', 'of', 'off', 'on', 'pcs', 'phon', 'plu', 'pref', 'produc', 'qbo', 'real', 'rent', 'robot', 'samsung', 'see', 'smart', 'someth', 'stock', 'tablet', 'thank', 'that', 'the', 'ther', 'to', 'vacu', 'virt', 'watch', 'wear', 'what', 'which', 'with', 'you']
-2017-07-20 00:19:16.673786: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
-2017-07-20 00:19:16.673812: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-07-20 00:19:16.673818: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
-2017-07-20 00:19:16.788448: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
-2017-07-20 00:19:16.788759: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
-name: GeForce GTX 1050 Ti
-major: 6 minor: 1 memoryClockRate (GHz) 1.43
-pciBusID 0000:01:00.0
-Total memory: 3.94GiB
-Free memory: 3.40GiB
-2017-07-20 00:19:16.788777: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
-2017-07-20 00:19:16.788783: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
-2017-07-20 00:19:16.788792: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0)
-2017-07-20 00:19:17.409311: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0)
----------------------------------
-Run id: ZH0TNU
-Log directory: tflearn_logs/
----------------------------------
-Training samples: 76
-Validation samples: 0
+Training Step: 17248  | total loss: 0.06077 | time: 0.117s
+| Adam | epoch: 392 | loss: 0.06077 - acc: 0.9874 -- iter: 176/176
 --
-Training Step: 10  | total loss: 2.99669 | time: 0.212s
-| Adam | epoch: 001 | loss: 2.99669 - acc: 0.0326 -- iter: 76/76
+Training Step: 17292  | total loss: 0.00433 | time: 0.117s
+| Adam | epoch: 393 | loss: 0.00433 - acc: 0.9999 -- iter: 176/176
 --
-Training Step: 20  | total loss: 2.99347 | time: 0.026s
-| Adam | epoch: 002 | loss: 2.99347 - acc: 0.0977 -- iter: 76/76
+Training Step: 17336  | total loss: 0.03699 | time: 0.121s
+| Adam | epoch: 394 | loss: 0.03699 - acc: 0.9975 -- iter: 176/176
+--
+Training Step: 17380  | total loss: 0.01620 | time: 0.118s
+| Adam | epoch: 395 | loss: 0.01620 - acc: 0.9994 -- iter: 176/176
+--
+Training Step: 17424  | total loss: 0.03932 | time: 0.118s
+| Adam | epoch: 396 | loss: 0.03932 - acc: 0.9929 -- iter: 176/176
+--
+Training Step: 17468  | total loss: 0.00404 | time: 0.117s
+| Adam | epoch: 397 | loss: 0.00404 - acc: 0.9999 -- iter: 176/176
+--
+Training Step: 17512  | total loss: 0.00285 | time: 0.121s
+| Adam | epoch: 398 | loss: 0.00285 - acc: 1.0000 -- iter: 176/176
+--
+Training Step: 17556  | total loss: 0.04458 | time: 0.118s
+| Adam | epoch: 399 | loss: 0.04458 - acc: 0.9960 -- iter: 176/176
+--
+Training Step: 17600  | total loss: 0.00586 | time: 0.116s
+| Adam | epoch: 400 | loss: 0.00586 - acc: 1.0000 -- iter: 176/176
 --
 
-
-                    skip about 3000 lines!
-
-
---
-Training Step: 9930  | total loss: 0.04068 | time: 0.028s
-| Adam | epoch: 993 | loss: 0.04068 - acc: 0.9775 -- iter: 76/76
---
-Training Step: 9940  | total loss: 0.04157 | time: 0.028s
-| Adam | epoch: 994 | loss: 0.04157 - acc: 0.9695 -- iter: 76/76
---
-Training Step: 9950  | total loss: 1.14104 | time: 0.028s
-| Adam | epoch: 995 | loss: 1.14104 - acc: 0.9170 -- iter: 76/76
---
-Training Step: 9960  | total loss: 0.97299 | time: 0.028s
-| Adam | epoch: 996 | loss: 0.97299 - acc: 0.9086 -- iter: 76/76
---
-Training Step: 9970  | total loss: 2.05226 | time: 0.027s
-| Adam | epoch: 997 | loss: 2.05226 - acc: 0.8734 -- iter: 76/76
---
-Training Step: 9980  | total loss: 0.75183 | time: 0.025s
-| Adam | epoch: 998 | loss: 0.75183 - acc: 0.9313 -- iter: 76/76
---
-Training Step: 9990  | total loss: 0.27672 | time: 0.027s
-| Adam | epoch: 999 | loss: 0.27672 - acc: 0.9694 -- iter: 76/76
---
-Training Step: 10000  | total loss: 2.22804 | time: 0.028s
-| Adam | epoch: 1000 | loss: 2.22804 - acc: 0.8786 -- iter: 76/76
---
+ Number of neurons in input layer of network:  560
+Number of neurons in output layer of network:  20
+Number of training samples:  176 
 
 
 
-..and from the notebook :
 
+$ nvidia-smi
+Thu Jul 27 21:53:09 2017       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 375.26                 Driver Version: 375.26                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce GTX 105...  Off  | 0000:01:00.0      On |                  N/A |
+|  0%   52C    P0    37W /  72W |   3798MiB /  4030MiB |     26%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|    0      2153    G   /usr/lib/xorg/Xorg                             256MiB |
+|    0      2948    G   cinnamon                                        99MiB |
+|    0      6110    C   python                                        3439MiB |
++-----------------------------------------------------------------------------+
 
-
-[W 00:24:35.986 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js (127.0.0.1) 1.50ms referer=http://localhost:8890/notebooks/display_sample_chat.ipynb
-2017-07-20 00:24:52.770637: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
-2017-07-20 00:24:52.770661: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-07-20 00:24:52.770668: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
-2017-07-20 00:24:52.896555: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
-2017-07-20 00:24:52.896866: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
-name: GeForce GTX 1050 Ti
-major: 6 minor: 1 memoryClockRate (GHz) 1.43
-pciBusID 0000:01:00.0
-Total memory: 3.94GiB
-Free memory: 3.39GiB
-2017-07-20 00:24:52.896884: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
-2017-07-20 00:24:52.896890: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
-2017-07-20 00:24:52.896899: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0)
-2017-07-20 00:24:53.471788: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0)
-2017-07-20 00:24:53.522390: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0)
-2017-07-20 00:24:53.583612: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0)
-[I 00:26:35.931 NotebookApp] Saving file at /display_sample_chat.ipynb
-[I 00:28:35.927 NotebookApp] Saving file at /display_sample_chat.ipynb
-[I 00:28:56.473 NotebookApp] Saving file at /display_sample_chat.ipynb
-[I 00:29:25.668 NotebookApp] Saving file at /display_sample_chat.ipynb
+(during the training)
