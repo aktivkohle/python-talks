@@ -12,48 +12,64 @@
              "I prefer Samsung", "I like Samsung", "I like Android", 
              "Android is easier", "I prefer Android", "Android please",
              "Actually would also like to hear about your Android devices"],
-         "responses": ["You can rent the Samsung Galaxy S8 64GB for €44,99 or the S8+ for€49,99"]
+         "responses": ["You can rent the Samsung Galaxy S8 64GB for €44,99 or the S8+ for€49,99", 
+         	"We can rent you the Samsung Galaxy S8 64GB for €44,99 or the S8+ for€49,99"]
         },            
         {"tag": "likes_iPhone",
          "patterns": ["iPhone", "iOS", "Apple iPhone", "I've always had iPhones", "I prefer Apple phones",
-             "Rather an Apple iPhone", "An iPhone", "An iPhone please", "apple phone",
-             "Actually tell me as well about the iPhones"],
-         "responses": ["You can rent an iPhone 7 128GB for €44,99, an iPhone 7 32GB for €39,99 or a 7 Plus 128GB for €49,99"]
-        },    
+             "Rather an Apple iPhone", "An iPhone", "An iPhone please", "apple phone", "apple iPhone",
+             "Actually tell me as well about the iPhones", "I hate Android", "I dislike Android", "I can't use Android"],
+         "responses": ["You can rent an iPhone 7 128GB for €44,99, an iPhone 7 32GB for €39,99 or a 7 Plus 128GB for €49,99",
+            "We can rent you an iPhone 7 128GB for €44,99, an iPhone 7 32GB for €39,99 or a 7 Plus 128GB for €49,99"]
+        },  
+        {"tag": "Apple_Ambiguity",
+         "patterns": ["Apple", "apple", "An Apple"],
+         "responses": ["Was that an Apple iPhone or Apple MacBook. Please answer 'MacBook' or 'iPhone'",
+            "Sorry, I just got confused. Was that an Apple iPhone or Apple MacBook. Please answer with 'MacBook' or 'iPhone'"]
+        },
+        {"tag": "hates_Apple",
+         "patterns": ["I hate Apple!", "I can't stand Apple", "I dislike Apple", "I don't like Apple"],
+         "responses": ["Ok fair enough, so can't remember if we were talking phones or computers. Can we help you with a Samsung Android phone or a different kind of notebook computer?"]
+        },                 
         {"tag": "wantsDrone",
          "patterns": ["Parrot", "drone", "BEBOP", "I'd like something that flies", "I'm interested in your drones",
-             "Can you tell me about your drones?", "flight", "flying", 
+             "Can you tell me about your drones?", "flight", "flying", "up in the sky",
              "What about something which flies", "how about something which flies"],
-         "responses": ["Certainly, we rent the BEBOP for €49,99 or the BEBOP 2 for €59,99"]
+         "responses": ["Certainly, we rent you the BEBOP for €49,99 or the BEBOP 2 for €59,99",
+         	"Certainly, you can rent the BEBOP for €49,99 or the BEBOP 2 for €59,99",
+         	"Certainly, you can rent the BEBOP 2 for €59,99 or the BEBOP for €49,99"]
         },    
         {"tag": "wantsVR",
          "patterns": ["What about Gaming and VR?", "Which games do you rent?", "VR", "virtual reality glasses",
              "virtual reality", "virtual reality goggles", "virtual reality glasses", "gaming", 
              "I'm interested in gaming", "Am interested in VR-glasses", "vive", "Rift", "Oculus", 
              "I'd like to try out virtual reality"],
-         "responses": ["The VR-glasses can rent you are the HTC Vice the Oculus Rift, both cost €59,99"]
+         "responses": ["The VR-glasses can rent you are the HTC Vice the Oculus Rift, both cost €59,99",
+         	"We can rent you the HTC Vice or the Oculus Rift VR-glasses, both cost €59,99"]
         },           
         {"tag": "wantsComputer",
          "patterns": ["notebooks", "laptops", "computers", "computing", 
              "I'd like to rent a laptop", "I'd like to rent a notebook", "I'd like to rent a computer",
-             "What computers do you have?", "PC", "I'd like to rent a PC"],
+             "What computers do you have?", "PC", "I'd like to rent a PC", "rent a computer"],
          "responses": ["We have a range of MacBooks, a Microsoft Surface or a Lenovo Yoga. Which kind would you like?"]
         },    
         {"tag": "wantsMacBook",
          "patterns": ["MacBook", "macbook", "mac", "I would like a MacBook", "An Apple MacBook",
-             "How much are the MacBooks?"],
+             "How much are the MacBooks?", "I can't use Windows tell me about the macs", "I don't like Microsoft, prefer Macs"],
          "responses": ["We have the following MacBooks: MacBook 12 inch M-5Y31, 8GB RAM, 516GB for €59,99, MacBook Air 11 inch i7 2.2, 8GB RAM, 512GB for €64,99, MacBook Air 13 inch i5-5250U, 4GB RAM, 128GB for €69,99, MacBook Pro 13 inch i5-3210M, 4GB RAM, 500GB for €74,99."]
         },            
         {"tag": "wantsSurface",
          "patterns": ["Microsoft", "Surface", "Microsoft Surface", "microsoft convertible",
              "I'd like a windows convertible PC", "Microsoft convertible PC",
-             "How much for the Microsoft Surface?"],
+             "How much for the Microsoft Surface?",
+             "Will go with the Microsoft Surface", "Don't like Apple will go with the Microsoft Surface"],
          "responses": ["Certainly you can rent a Microsoft Surface convertible notebook 512GB SSD Intel Core i7 16GB RAM dGPU for €59,99"]
         },        
         {"tag": "wantsYoga",
          "patterns": ["I'm interested in the Lenovo", "Lenovo", "Yoga", "Lenovo convertible", "Yoga convertible",
-             "How much is the lenovo yoga?"],
-         "responses": ["You can rent the Levnovo Yoga Convertible Laptop 300-11IBR 80M1004KGE for €59,99"]
+             "How much is the lenovo yoga?", "Don't like Apple tell me about the Lenovo Yoga"],
+         "responses": ["You can rent the Lenovo Yoga Convertible Laptop 300-11IBR 80M1004KGE for €59,99",
+         "What would you rather, a Microsoft Surface or a Lenovo Yoga?"]
         },    
         {"tag": "wantsConvertible-ambiguous",
          "patterns": ["convertible", "convertible PC"],
@@ -89,7 +105,7 @@
          "responses": ["We have robotic vacuum cleaners, virtual assistant speakers and a coffee machine"]     
         },                                                                      
         {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "morning", "afternoon"],
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Anyone there?" "Hello", "Good day", "morning", "afternoon"],
          "responses": ["Hello, thanks for visiting.", "Good to see you again", "Hi there, how can I help?"]
         },
         {"tag": "goodbye",
