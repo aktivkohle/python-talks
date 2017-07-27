@@ -58,11 +58,11 @@ if __name__ == "__main__":
     for intent in intents['intents']:
         for pattern in intent['patterns']:
             # tokenize each word in the sentence
-            w = nltk.word_tokenize(pattern)
+            token = nltk.word_tokenize(pattern)
             # add to our words list
-            words.extend(w)
+            words.extend(token)
             # add to documents in our corpus
-            documents.append((w, intent['tag']))
+            documents.append((token, intent['tag']))
             # add to our classes list
             if intent['tag'] not in classes:
                 classes.append(intent['tag'])
