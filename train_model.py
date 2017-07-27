@@ -68,7 +68,7 @@ if __name__ == "__main__":
                 classes.append(intent['tag'])
 
     # stem and lower each word and remove duplicates
-    words = [stemmer.stem(w.lower()) for w in words if w not in ignore_words]
+    words = [stemmer.stem(w.lower()) for w in words if w.lower() not in ignore_words]
     words = sorted(list(set(words)))
 
     # remove duplicates
