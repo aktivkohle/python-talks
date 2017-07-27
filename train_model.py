@@ -71,10 +71,14 @@ if __name__ == "__main__":
         for pattern in intent['patterns']:
             # tokenize each word in the sentence
             token = nltk.word_tokenize(pattern)
+            twograms = nltk.bigrams(token)
+            threegrams = nltk.trigrams(token)
+            # ngrams includes 1-gram, 2-gram and 3-grams
+            ngrams = token + list(twograms) + list(threegrams)
             # add to our words list
-            words.extend(token)
+            words.extend(ngrams)
             # add to documents in our corpus
-            documents.append((token, intent['tag']))
+            documents.append((ngrams, intent['tag']))
             # add to our classes list
             if intent['tag'] not in classes:
                 classes.append(intent['tag'])
