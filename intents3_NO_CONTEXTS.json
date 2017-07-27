@@ -24,9 +24,9 @@
             "We can rent you an iPhone 7 128GB for €44,99, an iPhone 7 32GB for €39,99 or a 7 Plus 128GB for €49,99"]
         },  
         {"tag": "Apple_Ambiguity",
-         "patterns": ["Apple", "apple", "An Apple"],
-         "responses": ["Was that an Apple iPhone or Apple MacBook. Please answer 'MacBook' or 'iPhone'",
-            "Sorry, I just got confused. Was that an Apple iPhone or Apple MacBook. Please answer with 'MacBook' or 'iPhone'"]
+         "patterns": ["Apple"],
+         "responses": ["Was that an Apple iPhone or Apple MacBook. Please answer 'MacBook' or 'iPhone', or if you mean the Apple Watch, please say 'smart watch'",
+            "Sorry, I just got confused. Was that an Apple iPhone or Apple MacBook. Please answer with 'MacBook' or 'iPhone', or if you mean the Apple Watch, please say 'smart watch'"]
         },
         {"tag": "hates_Apple",
          "patterns": ["I hate Apple!", "By the way, I hate Apple", "I hate Apple", "I can't stand Apple", "I dislike Apple", "I don't like Apple"],
@@ -78,9 +78,7 @@
         },
         {"tag": "wantsWearable",
          "patterns": ["wearables", "smartwatch", "smart watch", "suunto", "polar",
-             "I'm interested in smartwatches", "Which smartwatch do you have?", "I'd like to try a smartwatch",
-             "watch", "watches", "Ambit", "V800", "Asus",
-             "How much are the watches?", "apple watch"],
+             "smartwatches", "watch", "watches", "Ambit", "V800", "Asus", "apple watch"],
          "responses": ["You can rent the following smartwatches : 38mm Apple Watch for €39,99, 42mm Apple Watch for €44,99,  Suunto Ambit 3 watch for €39,99 or Asus Watch WI503Q-1LDBR0001 for €44,99."]
         }, 
         {"tag": "wants_virtual_assistent",
