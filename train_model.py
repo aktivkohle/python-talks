@@ -30,6 +30,18 @@ def bow(sentence, words, show_details=False):
                     print ("found in bag: %s" % w)
 
     return(np.array(bag))
+
+# define a function which replaces lower for the lists of tuples and single words 
+# resulting from of the ngrams:
+
+def flexible_lower(textlike):
+    if isinstance(textlike, str):
+        return textlike.lower()
+    elif isinstance(textlike, tuple):
+        # turn tuple briefly into a list to run a list comprehension on it
+        textlike_list = list(textlike)
+        textlike_list = [e.lower() for e in textlike_list]
+        return tuple(textlike_list)    
     
 
 if __name__ == "__main__":    
