@@ -1,6 +1,6 @@
 # a conversational application with python
 
-Here is **[the notebook](https://github.com/aktivkohle/python-talks/blob/ngrams-mod/display_sample_chat.ipynb)** with the chat from the ngrams-mod branch.
+Here is **[the notebook](display_sample_chat.ipynb)** with the output from this model for a sample chat.
 
 So an issue arose where a test-case :
 > *I don't like Microsoft but am more into Apple*
