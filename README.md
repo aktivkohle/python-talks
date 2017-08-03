@@ -1,7 +1,5 @@
 # a conversational application with python
 
-### *update -  the ngram-mod branch*
-
 Here is **[the notebook](https://github.com/aktivkohle/python-talks/blob/ngrams-mod/display_sample_chat.ipynb)** with the chat from the ngrams-mod branch.
 
 So an issue arose where a test-case :
